@@ -7,6 +7,7 @@
         <span class="price">{{ product.price }}</span> <br />
       </li>
     </ul>
+    <button @click="reducePrice">Reduce Price</button>
     <h2>Sale Products</h2>
     <ul>
       <li v-for="sale in saleProducts" :key="sale">
@@ -27,6 +28,13 @@ export default {
     },
     saleProducts() {
       return this.$store.getters.saleProducts;
+    },
+    methods: {
+      reducePrice() {
+        this.$store.state.products.forEach(product => {
+          product.price -= 1;
+        });
+      }
     }
   }
 };
