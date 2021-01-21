@@ -7,8 +7,7 @@ export default new Vuex.Store({
   state: {
     products: [
       { name: "Banana Skin", price: 20 },
-      { name: "Shiny Star", price: 20 },
-    ],
+      { name: "Shiny Star", price: 20 }
   },
   getters: {
     products() {
@@ -23,5 +22,4 @@ export default new Vuex.Store({
   },
   mutations: {},
   actions: {},
-  modules: {},
-})
+  modules: {}
