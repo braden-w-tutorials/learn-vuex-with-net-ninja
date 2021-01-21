@@ -21,7 +21,14 @@
 
 <script>
 export default {
-  computed: {},
+  computed: {
+    products() {
+      return this.$store.state.products()
+    },
+    saleProducts() {
+      return this.$store.state.saleProducts()
+    },
+  },
 }
 </script>
 
