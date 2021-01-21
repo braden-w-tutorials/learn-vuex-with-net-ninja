@@ -10,13 +10,17 @@ import ProductListOne from "./components/ProductListOne.vue"
 import ProductListTwo from "./components/ProductListTwo.vue"
 export default {
   name: "App",
-  data(){
+  data() {
     return {
-      products: [{name: "Banana Skin", price: 20},{name: "Shiny Star", price: 20}]
-      }
-  }
+      products: [
+        { name: "Banana Skin", price: 20 },
+        { name: "Shiny Star", price: 20 },
+      ],
+    }
+  },
   components: {
-    HelloWorld,
+    ProductListOne,
+    ProductListTwo,
   },
 }
 </script>
