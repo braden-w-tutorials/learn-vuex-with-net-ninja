@@ -23,10 +23,10 @@
 export default {
   computed: {
     products() {
-      return this.$store.state.products()
+      return this.$store.getters.products()
     },
     saleProducts() {
-      return this.$store.state.saleProducts()
+      return this.$store.getters.saleProducts()
     },
   },
 }
