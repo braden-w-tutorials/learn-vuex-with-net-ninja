@@ -20,13 +20,17 @@ export default new Vuex.Store({
   },
   mutations: {
     reducePrice: state => {
-      setTimeout(() => {
-        state.products.forEach(product => {
-          product.price -= 1;
-        });
-      }, 3000);
+      state.products.forEach(product => {
+        product.price -= 1;
+      });
     }
   },
-  actions: {},
+  actions: {
+    reducePrice: context => {
+      setTimeout(function() {
+        context.commit(reducePrice);
+      }, 2000);
+    }
+  },
   modules: {}
 });
