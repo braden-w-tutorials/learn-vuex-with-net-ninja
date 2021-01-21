@@ -11,12 +11,7 @@ import ProductListTwo from "./components/ProductListTwo.vue"
 export default {
   name: "App",
   data() {
-    return {
-      products: [
-        { name: "Banana Skin", price: 20 },
-        { name: "Shiny Star", price: 20 },
-      ],
-    }
+    return {}
   },
   components: {
     ProductListOne,
