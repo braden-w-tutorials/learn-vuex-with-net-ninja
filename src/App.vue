@@ -6,18 +6,18 @@
 </template>
 
 <script>
-import ProductListOne from "./components/ProductListOne.vue"
-import ProductListTwo from "./components/ProductListTwo.vue"
+import ProductListOne from "./components/ProductListOne.vue";
+import ProductListTwo from "./components/ProductListTwo.vue";
 export default {
   name: "App",
   data() {
-    return {}
+    return {};
   },
   components: {
     ProductListOne,
-    ProductListTwo,
-  },
-}
+    ProductListTwo
+  }
+};
 </script>
 
 <style>
