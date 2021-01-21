@@ -2,7 +2,7 @@
   <div id="product-list-one">
     <h2>Product List One</h2>
     <ul>
-      <li v-for=""></li>
+      <li v-for="product in products" :key="product">
     </ul>
   </div>
 </template>
