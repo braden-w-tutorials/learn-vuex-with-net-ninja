@@ -8,6 +8,11 @@
 <script>
 export default {
   name: "App",
+  data(){
+    return {
+      products: [{name: "Banana Skin", price: 20},{name: "Shiny Star", price: 20}]
+      }
+  }
   components: {
     HelloWorld,
   },
