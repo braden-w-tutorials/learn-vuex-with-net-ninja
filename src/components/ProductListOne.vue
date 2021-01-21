@@ -4,7 +4,13 @@
     <ul>
       <li v-for="product in products" :key="product">
         <span class="name">{{ product.name }}</span> <br />
-        <span class="price">{{ product.price }}</span>
+    <h2>Sale Products</h2>
+    <ul>
+      <li v-for="sale in saleProducts" :key="sale">
+        <span>
+          Name: {{ sale.name }} <br />
+          Price: {{ sale.price }} <br
+        /></span>
       </li>
     </ul>
   </div>
