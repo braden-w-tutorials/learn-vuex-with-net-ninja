@@ -3,8 +3,8 @@
     <h2>Product List One</h2>
     <ul>
       <li v-for="product in products" :key="product">
-        <span class="name">{{product.name}}</span> <br>
-        <span class="price">{{product.price}}</span>
+        <span class="name">{{ product.name }}</span> <br />
+        <span class="price">{{ product.price }}</span>
       </li>
     </ul>
   </div>
@@ -13,9 +13,10 @@
 <script>
 export default {
   props: ["products"],
-  data() {
-    return {
-    }
+  computed: {
+    products() {
+      return this.$store.state.products
+    },
   },
 }
 </script>
