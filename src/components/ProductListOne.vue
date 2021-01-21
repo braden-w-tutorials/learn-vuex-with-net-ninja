@@ -21,22 +21,26 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+import { mapActions } from "vuex";
 export default {
   computed: {
     products() {
       return this.$store.state.products;
     },
-    saleProducts() {
-      return this.$store.getters.saleProducts;
-    }
+    // saleProducts(){
+    //   return this.$store.getters.saleProducts
+    // }
+    ...mapGetters(["saleProducts"])
   },
   methods: {
-    reducePrice(amount) {
-      // this.$store.state.products.forEach(product => {
-      //   product.price -= 1;
-      // });
-      this.$store.dispatch("reducePrice", amount);
-    }
+    // reducePrice(amount) {
+    // this.$store.state.products.forEach(product => {
+    //   product.price -= 1;
+    // });
+    //   this.$store.dispatch("reducePrice", amount);
+    // }
+    ...mapActions(["reducePrice"])
   }
 };
 </script>
