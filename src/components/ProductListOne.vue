@@ -16,6 +16,12 @@ export default {
     products() {
       return this.$store.state.products
     },
+    saleProducts() {
+      const saleProducts = this.$store.state.products.map((product) => {
+        return { name: `** ${product.name} **`, price: product.price / 2 }
+      })
+      return saleProducts
+    },
   },
 }
 </script>
