@@ -24,7 +24,7 @@ export default new Vuex.Store({
         state.products.forEach(product => {
           product.price -= 1;
         });
-      });
+      }, 3000);
     }
   },
   actions: {},
