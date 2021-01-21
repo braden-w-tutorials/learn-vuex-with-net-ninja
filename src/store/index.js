@@ -10,6 +10,17 @@ export default new Vuex.Store({
       { name: "Shiny Star", price: 20 },
     ],
   },
+  getters: {
+    products() {
+      return state.products
+    },
+    saleProducts() {
+      const saleProducts = state.products.map((product) => {
+        return { name: `** ${product.name} **`, price: product.price / 2 }
+      })
+      return saleProducts
+    },
+  },
   mutations: {},
   actions: {},
   modules: {},
