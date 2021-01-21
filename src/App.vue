@@ -1,5 +1,8 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <product-list-one></product-list-one>
+    <product-list-two></product-list-two>
+  </div>
 </template>
 
 <script>
