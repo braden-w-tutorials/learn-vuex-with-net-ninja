@@ -31,7 +31,7 @@ export default {
     }
   },
   methods: {
-    reducePrice: function() {
+    reducePrice() {
       // this.$store.state.products.forEach(product => {
       //   product.price -= 1;
       // });
